@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 
 // Rutas
 import { APP_ROUTES } from './app.routes';
+import { CommonService } from './services/common.service';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { APP_ROUTES } from './app.routes';
     SharedModule,
     APP_ROUTES
   ],
-  providers: [],
+  providers: [CommonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

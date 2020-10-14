@@ -9,14 +9,15 @@ import { CommonService } from 'src/app/services/common.service';
 })
 export class ServicesComponent implements OnInit {
 
+  myCurrentUrl = '';
+
   constructor(
-    private router: Router,
-    private commonService: CommonService
+    private router: Router
   ) { }
 
   ngOnInit(): void {
-    // const state = this.router.url === '/inicio';
-    // this.commonService.sendData(state);
+    const myRoute = this.router.url;
+    this.myCurrentUrl = myRoute.replace('/', '');
   }
 
 }

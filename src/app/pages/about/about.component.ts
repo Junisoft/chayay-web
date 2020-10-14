@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, OnDestroy, AfterViewInit, AfterViewChecked, AfterContentChecked } from '@angular/core';
 import { Router } from '@angular/router';
-import { CommonService } from '../../services/common.service';
 
 @Component({
   selector: 'app-about',
@@ -9,18 +8,15 @@ import { CommonService } from '../../services/common.service';
 })
 export class AboutComponent implements OnInit {
 
+  myCurrentUrl = '';
+
   constructor(
-    private router: Router,
-    private commonService: CommonService) { }
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
-    const state = this.router.url === '/inicio';
-    debugger;
-    this.commonService.sendData(state);
+    const myRoute = this.router.url;
+    this.myCurrentUrl = myRoute.replace('/', '');
   }
-
-  // ngOnDestroy(): void {
-  //   this.commonService.clearData();
-  // }
 
 }

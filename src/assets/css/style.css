@@ -462,20 +462,24 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
   height: auto;
   background: rgba(255, 255, 255, 0.2);
+  /* background: #ffb400; */
   border-radius: 50px;
   padding: 10px;
   transition: 0.3s;
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: #ffb400;
 }
 
 #hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
-  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8); */
+  background: #ffb400;
   color: rgba(255, 255, 255, 0.8);
 }
 
 #hero .carousel-indicators li {
   cursor: pointer;
-  background: #fff;
+  background: #ffb400;
   overflow: hidden;
   border: 0;
   width: 12px;

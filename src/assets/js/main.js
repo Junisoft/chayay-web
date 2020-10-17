@@ -7,8 +7,10 @@
 !(function($) {
   "use strict";
 
+  debugger;
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 2;
+  var scrolltoOffset = $('#header').outerHeight();
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       let urlHashCustom = this.hash.split("/")[1];
@@ -17,12 +19,15 @@
       if (target.length) {
         e.preventDefault();
 
+        debugger;
+
         var scrollto = target.offset().top - scrolltoOffset;
 
         if ($(this).attr("href") == '#header') {
           scrollto = 0;
         }
 
+        debugger;
         $('html, body').animate({
           scrollTop: scrollto
         }, 1500, 'easeInOutExpo');
@@ -60,7 +65,10 @@
   });
 
   // Mobile Navigation
+  //TODO
+  debugger;
   if ($('.nav-menu').length) {
+    debugger;
     var $mobile_nav = $('.nav-menu').clone().prop({
       class: 'mobile-nav d-lg-none'
     });

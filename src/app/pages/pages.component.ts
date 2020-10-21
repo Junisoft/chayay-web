@@ -1,37 +1,22 @@
-import { Component, OnInit, OnDestroy, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CommonService } from '../services/common.service';
-import { Subscription, Observable } from 'rxjs';
+
+declare function customInitFunctions();
 
 @Component({
   selector: 'app-pages',
   templateUrl: './pages.component.html',
   styleUrls: ['./pages.component.css']
 })
-export class PagesComponent implements OnInit, AfterViewInit {
+export class PagesComponent implements OnInit {
 
-  subscription: Subscription;
   showCarousel: boolean;
-  myObservable: Observable<any>;
 
-  constructor(
-    private router: Router,
-    private commonService: CommonService,
-    private cd: ChangeDetectorRef) {
-    }
+  constructor() {
+  }
 
   ngOnInit(): void {
-    this.subscription = this.commonService.getData().subscribe(response => {
-      this.showCarousel = response;
-    });
+    customInitFunctions();
   }
-
-  ngAfterViewInit(): void {
-    // this.cd.detectChanges();
-  }
-
-  // ngOnDestroy(): void {
-  //   this.subscription.unsubscribe();
-  // }
 
 }

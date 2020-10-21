@@ -9,6 +9,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import { PAGES_ROUTES } from './pages.routes';
     imports: [
         CommonModule,
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        RouterModule
     ],
 })
 export class PagesModule {}

@@ -16,11 +16,8 @@ const customInitFunctions = () => {
         let urlHashCustom = this.hash.split("/")[1];
         urlHashCustom = `#${urlHashCustom}`;
         var target = $(urlHashCustom);
-        debugger;
         if (target.length) {
           e.preventDefault();
-  
-          debugger;
   
           var scrollto = target.offset().top - scrolltoOffset;
   
@@ -28,7 +25,6 @@ const customInitFunctions = () => {
             scrollto = 0;
           }
   
-          debugger;
           $('html, body').animate({
             scrollTop: scrollto
           }, 1500, 'easeInOutExpo');
@@ -66,42 +62,45 @@ const customInitFunctions = () => {
     });
   
     // Mobile Navigation
-    //TODO
-    debugger;
-    if ($('.nav-menu').length) {
-      debugger;
-      var $mobile_nav = $('.nav-menu').clone().prop({
-        class: 'mobile-nav d-lg-none'
-      });
-      $('body').append($mobile_nav);
-      $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
-      $('body').append('<div class="mobile-nav-overly"></div>');
+    // if ($('.nav-menu').length) {
+    //   debugger; 
+    //   //Clone fallado (falta el href)
+    //   var $mobile_nav = $('.nav-menu').clone().prop({
+    //     class: 'mobile-nav d-lg-none'
+    //   });
+
+    //   $('body').append($mobile_nav);
+    //   $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    //   $('body').append('<div class="mobile-nav-overly"></div>');
   
-      $(document).on('click', '.mobile-nav-toggle', function(e) {
-        $('body').toggleClass('mobile-nav-active');
-        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-        $('.mobile-nav-overly').toggle();
-      });
+    //   $(document).on('click', '.mobile-nav-toggle', function(e) {
+    //     //Esto hace que se muestre modal de navegacion
+    //     $('body').toggleClass('mobile-nav-active');
+    //     $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+    //     $('.mobile-nav-overly').toggle();
+    //   });
   
-      $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
-        e.preventDefault();
-        $(this).next().slideToggle(300);
-        $(this).parent().toggleClass('active');
-      });
+    //   $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
+    //     debugger;
+    //     e.preventDefault();
+    //     $(this).next().slideToggle(300);
+    //     $(this).parent().toggleClass('active');
+    //   });
   
-      $(document).click(function(e) {
-        var container = $(".mobile-nav, .mobile-nav-toggle");
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-          if ($('body').hasClass('mobile-nav-active')) {
-            $('body').removeClass('mobile-nav-active');
-            $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-            $('.mobile-nav-overly').fadeOut();
-          }
-        }
-      });
-    } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
-      $(".mobile-nav, .mobile-nav-toggle").hide();
-    }
+    //   $(document).click(function(e) {
+    //     var container = $(".mobile-nav, .mobile-nav-toggle");
+    //     if (!container.is(e.target) && container.has(e.target).length === 0) {
+    //       if ($('body').hasClass('mobile-nav-active')) {
+    //         $('body').removeClass('mobile-nav-active');
+    //         $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+    //         $('.mobile-nav-overly').fadeOut();
+    //       }
+    //     }
+    //   });
+    // } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
+    //   debugger;
+    //   $(".mobile-nav, .mobile-nav-toggle").hide();
+    // }
   
     // Intro carousel
     var heroCarousel = $("#heroCarousel");

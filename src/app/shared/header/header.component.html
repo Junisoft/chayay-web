@@ -4,9 +4,8 @@
 
       <!-- <h1 class="logo mr-auto"><a href="#"><span>CHA</span>YAY</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a routerLink="/inicio" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
-      <nav class="nav-menu d-none d-lg-block">
+      <!-- <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li routerLinkActive="active"><a routerLink="/inicio">Inicio</a></li>
           <li routerLinkActive="active"><a routerLink="/nosotros">Nosotros</a></li>
@@ -14,15 +13,31 @@
           <li routerLinkActive="active"><a routerLink="/planes">Planes</a></li>
           <li routerLinkActive="active"><a routerLink="/contacto" >Contacto</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <!-- .nav-menu -->
 
-      <div class="header-social-links">
+      <nav class="nav-menu navbar navbar-expand-lg navbar-light">
+        <a routerLink="/inicio" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/inicio">Inicio</a></li>
+            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/nosotros">Nosotros</a></li>
+            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/servicios">Servicios</a></li>
+            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/planes">Planes</a></li>
+            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/contacto" >Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- <div class="header-social-links">
         <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
         <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
         <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-      </div>
+      </div> -->
 
     </div>
 </header>

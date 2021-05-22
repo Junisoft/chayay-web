@@ -12,4 +12,6 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public facebook_link: string = "https://www.facebook.com/laninversat";
+
 }

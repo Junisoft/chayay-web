@@ -416,6 +416,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #ffb400;
+  background: #ffb400;
+  text-decoration: none;
 }
 
 #hero .btn-get-started:hover {

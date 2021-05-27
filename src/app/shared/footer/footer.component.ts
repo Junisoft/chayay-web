@@ -13,5 +13,6 @@ export class FooterComponent implements OnInit {
   }
 
   public facebook_link: string = "https://www.facebook.com/laninversat";
+  public instagram_link: string = "https://www.instagram.com/chayayperu/";
 
 }

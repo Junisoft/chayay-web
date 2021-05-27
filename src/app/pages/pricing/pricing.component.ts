@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-pricing',
@@ -9,7 +8,9 @@ import { CommonService } from 'src/app/services/common.service';
 })
 export class PricingComponent implements OnInit {
 
-  myCurrentUrl = '';
+  public myCurrentUrl: string = '';
+  public phoneWA: string = '51961515095';
+  public loQuieroLink: string = `https://wa.me/${this.phoneWA}?text=Hola, necesito información sobre los planes`;
 
   constructor(
     private router: Router

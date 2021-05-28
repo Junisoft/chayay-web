@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class PricingComponent implements OnInit {
 
   public myCurrentUrl: string = '';
-  public phoneWA: string = '51961515095';
+  public phoneWA: string = '51925927848';
   public loQuieroLink: string = `https://wa.me/${this.phoneWA}?text=Hola, necesito información sobre los planes`;
 
   constructor(

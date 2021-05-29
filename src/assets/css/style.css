@@ -2280,3 +2280,12 @@ section {
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   color: #ffb400;
 }
+
+section.company {
+  height: 470px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 145px;
+  background-size: cover;
+  background-image: url(../img/internet-coorporativo.png);
+}

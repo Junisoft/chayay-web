@@ -583,7 +583,7 @@ section {
   padding: 15px 0;
   background: #ffb400;
   min-height: 40px;
-  margin-top: 106px;
+  margin-top: 105px;
 }
 
 .breadcrumbs h2 {
@@ -2272,11 +2272,6 @@ section {
   color: #ffb400;
 }
 
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   color: #ffb400;
 }
@@ -2288,4 +2283,15 @@ section.company {
   padding-top: 145px;
   background-size: cover;
   background-image: url(../img/internet-coorporativo.png);
+}
+
+.navbar a {
+  display: block;
+  position: relative;
+  color: #111;
+  transition: 0.3s;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "PROTOTYPE", sans-serif;
 }

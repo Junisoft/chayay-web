@@ -583,7 +583,7 @@ section {
   padding: 15px 0;
   background: #ffb400;
   min-height: 40px;
-  margin-top: 106px;
+  margin-top: 105px;
 }
 
 .breadcrumbs h2 {
@@ -2272,11 +2272,95 @@ section {
   color: #ffb400;
 }
 
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   color: #ffb400;
+}
+
+section.company {
+  height: 470px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 145px;
+  background-size: cover;
+  background-image: url(../img/fondo-company.jpg);
+}
+
+.navbar a {
+  display: block;
+  position: relative;
+  color: #111;
+  transition: 0.3s;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "PROTOTYPE", sans-serif;
+}
+
+@media screen and (max-width: 767px){
+  section.company {
+    background-size: auto 500px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 991px){
+  section.company {
+    padding: 0;
+    /* height: auto; */
+    background-position: center top, center bottom;
+  }
+}
+
+.company .personcompany {
+  right: calc(50% - 290px);
+}
+
+.company img {
+  position: absolute;
+  bottom: 0;
+  max-height: 430px;
+}
+
+.company .hablemos {
+  width: 150px;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: transform 0.2s;
+  background: white;
+  color: #ffb400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 991px){
+  .company .t-hogar {
+    padding-top: 160px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .company .t-hogar {
+    height: 470px;
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.company h2:after {
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 3px;
+  bottom: 0;
+  background-color: white;
+  right: 0;
+}
+
+.shadow {
+  text-shadow: 2px 2px gray;
 }

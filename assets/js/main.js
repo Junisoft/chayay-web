@@ -11,7 +11,7 @@ const customInitFunctions = () => {
 
     // Smooth scroll for the navigation menu and links with .scrollto classes
     var scrolltoOffset = $('#header').outerHeight() - 2;
-    $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+    $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto, .navbar a', function(e) {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         let urlHashCustom = this.hash.split("/")[1];
         urlHashCustom = `#${urlHashCustom}`;
@@ -29,37 +29,37 @@ const customInitFunctions = () => {
             scrollTop: scrollto
           }, 1500, 'easeInOutExpo');
   
-          if ($(this).parents('.nav-menu, .mobile-nav').length) {
-            $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-            $(this).closest('li').addClass('active');
-          }
+          // if ($(this).parents('.nav-menu, .mobile-nav').length) {
+          //   $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+          //   $(this).closest('li').addClass('active');
+          // }
   
-          if ($('body').hasClass('mobile-nav-active')) {
-            $('body').removeClass('mobile-nav-active');
-            $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-            $('.mobile-nav-overly').fadeOut();
-          }
+          // if ($('body').hasClass('mobile-nav-active')) {
+          //   $('body').removeClass('mobile-nav-active');
+          //   $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          //   $('.mobile-nav-overly').fadeOut();
+          // }
           return false;
         }
       }
     });
   
     // Activate smooth scroll on page load with hash links in the url
-    $(document).ready(function() {
-      if (window.location.hash) {
-        let urlHashCustom = window.location.hash.split("/")[1];
-        urlHashCustom = `#${urlHashCustom}`;
+    // $(document).ready(function() {
+    //   if (window.location.hash) {
+    //     let urlHashCustom = window.location.hash.split("/")[1];
+    //     urlHashCustom = `#${urlHashCustom}`;
         
-        //var initial_nav = window.location.hash;
-        var initial_nav = urlHashCustom;
-        if ($(initial_nav).length) {
-          var scrollto = $(initial_nav).offset().top - scrolltoOffset;
-          $('html, body').animate({
-            scrollTop: scrollto
-          }, 1500, 'easeInOutExpo');
-        }
-      }
-    });
+    //     //var initial_nav = window.location.hash;
+    //     var initial_nav = urlHashCustom;
+    //     if ($(initial_nav).length) {
+    //       var scrollto = $(initial_nav).offset().top - scrolltoOffset;
+    //       $('html, body').animate({
+    //         scrollTop: scrollto
+    //       }, 1500, 'easeInOutExpo');
+    //     }
+    //   }
+    // });
   
     // Mobile Navigation
     // if ($('.nav-menu').length) {
@@ -132,43 +132,43 @@ const customInitFunctions = () => {
     });
   
     // Porfolio isotope and filter
-    $(window).on('load', function() {
-      var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item'
-      });
+    // $(window).on('load', function() {
+    //   var portfolioIsotope = $('.portfolio-container').isotope({
+    //     itemSelector: '.portfolio-item'
+    //   });
   
-      $('#portfolio-flters li').on('click', function() {
-        $("#portfolio-flters li").removeClass('filter-active');
-        $(this).addClass('filter-active');
+    //   $('#portfolio-flters li').on('click', function() {
+    //     $("#portfolio-flters li").removeClass('filter-active');
+    //     $(this).addClass('filter-active');
   
-        portfolioIsotope.isotope({
-          filter: $(this).data('filter')
-        });
-        aos_init();
-      });
+    //     portfolioIsotope.isotope({
+    //       filter: $(this).data('filter')
+    //     });
+    //     aos_init();
+    //   });
   
-      // Initiate venobox (lightbox feature used in portofilo)
-      $(document).ready(function() {
-        $('.venobox').venobox();
-      });
-    });
+    //   // Initiate venobox (lightbox feature used in portofilo)
+    //   $(document).ready(function() {
+    //     $('.venobox').venobox();
+    //   });
+    // });
   
     // Skills section
-    $('.skills-content').waypoint(function() {
-      $('.progress .progress-bar').each(function() {
-        $(this).css("width", $(this).attr("aria-valuenow") + '%');
-      });
-    }, {
-      offset: '80%'
-    });
+    // $('.skills-content').waypoint(function() {
+    //   $('.progress .progress-bar').each(function() {
+    //     $(this).css("width", $(this).attr("aria-valuenow") + '%');
+    //   });
+    // }, {
+    //   offset: '80%'
+    // });
   
     // Portfolio details carousel
-    $(".portfolio-details-carousel").owlCarousel({
-      autoplay: true,
-      dots: true,
-      loop: true,
-      items: 1
-    });
+    // $(".portfolio-details-carousel").owlCarousel({
+    //   autoplay: true,
+    //   dots: true,
+    //   loop: true,
+    //   items: 1
+    // });
   
     // Init AOS
     function aos_init() {

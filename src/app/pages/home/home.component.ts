@@ -9,10 +9,10 @@ import { CommonService } from 'src/app/services/common.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(
-    private router: Router,
-    private commonService: CommonService
-  ) { }
+  public phoneWA: string = '51925927848';
+  public loQuieroLink: string = `https://wa.me/${this.phoneWA}?text=Hola, necesito información sobre internet para empresas`;
+
+  constructor() { }
 
   ngOnInit(): void {
     // const state = this.router.url === '/inicio';

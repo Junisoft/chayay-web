@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 // Rutas
 import { APP_ROUTES } from './app.routes';
@@ -19,9 +20,10 @@ import { CommonService } from './services/common.service';
     PagesModule,
     SharedModule,
     APP_ROUTES,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
-  providers: [CommonService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

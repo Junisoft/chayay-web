@@ -11,7 +11,7 @@
 ------------------*/
 @font-face {
 	font-family: 'PROTOTYPE';
-  src:url('fonts/PROTOTYPE.TTF') format("truetype");
+  src:url('../fonts/PROTOTYPE.TTF') format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }

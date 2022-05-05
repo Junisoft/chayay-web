@@ -8,8 +8,9 @@ import { ServicesComponent } from './services/services.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { SharedModule } from '../shared/shared.module';
-import { PAGES_ROUTES } from './pages.routes';
+// import { PAGES_ROUTES } from './pages.routes';
 import { RouterModule } from '@angular/router';
+import { PagesRoutingModule } from './pages-routing.module';
 
 @NgModule({
     declarations: [
@@ -20,13 +21,11 @@ import { RouterModule } from '@angular/router';
         PricingComponent,
         ContactComponent
     ],
-    exports: [
-
-    ],
+    exports: [],
     imports: [
         CommonModule,
         SharedModule,
-        PAGES_ROUTES,
+        PagesRoutingModule,
         RouterModule
     ],
 })

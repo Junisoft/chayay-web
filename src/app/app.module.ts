@@ -7,9 +7,8 @@ import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-// Rutas
-import { APP_ROUTES } from './app.routes';
-import { CommonService } from './services/common.service';
+// Routes
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,7 @@ import { CommonService } from './services/common.service';
     BrowserModule,
     PagesModule,
     SharedModule,
-    APP_ROUTES,
+    AppRoutingModule,
     RouterModule,
     HttpClientModule
   ],

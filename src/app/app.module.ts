@@ -9,6 +9,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 // Routes
 import { AppRoutingModule } from './app-routing.module';
+import { AbstractPlanService } from './services/plan.abstract-service';
+import { PlanService } from './services/plan.service';
+import { MockPlanService } from './services/mock-plan.service';
+
+const production = [
+  { provide: AbstractPlanService, useClass: PlanService }
+];
+
+const test = [
+  { provide: AbstractPlanService, useClass: MockPlanService }
+];
 
 @NgModule({
   declarations: [
@@ -22,7 +33,10 @@ import { AppRoutingModule } from './app-routing.module';
     RouterModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ...test,
+    //...production
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

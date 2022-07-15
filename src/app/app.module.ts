@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AbstractPlanService } from './services/plan.abstract-service';
 import { PlanService } from './services/plan.service';
-import { MockPlanService } from './services/mock-plan.service';
+import { MockPlanService } from './services/mock/mock-plan.service';
 
 const production = [
   { provide: AbstractPlanService, useClass: PlanService }

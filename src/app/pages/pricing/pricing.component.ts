@@ -35,8 +35,8 @@ export class PricingComponent implements OnInit {
   }
 
   getRowsForPlans(): void{
-    var value1 = Math.round(this.plans.length / 4);
-    var value2 = this.plans.length % 4;
+    const value1 = Math.round(this.plans.length / 4);
+    const value2 = this.plans.length % 4;
     this.rows = value1 + value2;
   }
 

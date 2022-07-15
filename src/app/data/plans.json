@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "speed": "30 Mbps",
+        "cost": 50
+    },
+    {
+        "id": 2,
+        "speed": "50 Mbps",
+        "cost": 70
+    },
+    {
+        "id": 3,
+        "speed": "70 Mbps",
+        "cost": 80
+    },
+    {
+        "id": 4,
+        "speed": "100 Mbps",
+        "cost": 90
+    },
+    {
+        "id": 5,
+        "speed": "150 Mbps",
+        "cost": 120
+    },
+    {
+        "id": 6,
+        "speed": "200 Mbps",
+        "cost": 130
+    },
+    {
+        "id": 7,
+        "speed": "300 Mbps",
+        "cost": 170
+    },
+    {
+        "id": 8,
+        "speed": "600 Mbps",
+        "cost": 260
+    }    
+]

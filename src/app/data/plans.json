@@ -1,42 +1,42 @@
 [
     {
         "id": 1,
-        "speed": "30 Mbps",
-        "cost": 50
+        "speed": "60 Mbps",
+        "cost": 49
     },
     {
         "id": 2,
-        "speed": "50 Mbps",
-        "cost": 70
+        "speed": "100 Mbps",
+        "cost": 69
     },
     {
         "id": 3,
-        "speed": "70 Mbps",
-        "cost": 80
+        "speed": "150 Mbps",
+        "cost": 79
     },
     {
         "id": 4,
-        "speed": "100 Mbps",
-        "cost": 90
+        "speed": "200 Mbps",
+        "cost": 89
     },
     {
         "id": 5,
-        "speed": "150 Mbps",
-        "cost": 120
+        "speed": "300 Mbps",
+        "cost": 119
     },
     {
         "id": 6,
-        "speed": "200 Mbps",
-        "cost": 130
+        "speed": "400 Mbps",
+        "cost": 129
     },
     {
         "id": 7,
-        "speed": "300 Mbps",
-        "cost": 170
+        "speed": "600 Mbps",
+        "cost": 169
     },
     {
         "id": 8,
-        "speed": "600 Mbps",
-        "cost": 260
+        "speed": "1000 Mbps",
+        "cost": 259
     }    
 ]

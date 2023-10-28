@@ -1,4 +1,4 @@
-export interface FooterLinks {
+export interface IFooterLinks {
     facebook: string;
     instragram: string;
     procedimientoReclamos: string;
@@ -6,6 +6,5 @@ export interface FooterLinks {
     directivaReclamos: string;
     condicionesUsoSitioWeb: string;
     politicasUsoInternet: string;
-    reclamoAtencion: string;
-    reclamoProducto: string;
+    libroReclamaciones: string;
 }

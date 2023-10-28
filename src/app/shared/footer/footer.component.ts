@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterLinks } from 'src/app/interfaces/footer-links.interface';
+import { IFooterLinks } from 'src/app/interfaces/footer-links.interface';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +7,7 @@ import { FooterLinks } from 'src/app/interfaces/footer-links.interface';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  footerLinks: FooterLinks = {
+  footerLinks: IFooterLinks = {
     facebook: "https://www.facebook.com/laninversat",
     instragram: "https://www.instagram.com/chayayperu/",
     procedimientoReclamos: "#",
@@ -15,8 +15,7 @@ export class FooterComponent implements OnInit {
     directivaReclamos: "#",
     condicionesUsoSitioWeb: "#",
     politicasUsoInternet: "#",
-    reclamoAtencion: "#",
-    reclamoProducto: "#"
+    libroReclamaciones: "https://forms.gle/PPJo1W8PfZpUWqEQ9"
   }
 
   constructor() { }

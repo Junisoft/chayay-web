@@ -15,7 +15,7 @@ export class FooterComponent implements OnInit {
     directivaReclamos: "#",
     condicionesUsoSitioWeb: "#",
     politicasUsoInternet: "#",
-    libroReclamaciones: "https://forms.gle/PPJo1W8PfZpUWqEQ9"
+    libroReclamaciones: "https://forms.gle/G9vVrKhiP9VYPrr4A"
   }
 
   constructor() { }
